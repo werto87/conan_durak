@@ -5,3 +5,6 @@ sources:
   0.0.2:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.2.tar.gz
     sha256: 0bbb3cc8016018da0e889f4565cb114f56c06fcadb9dcd840f313f10493cbad1
+  0.0.3:
+    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.3.tar.gz
+    sha256: 1df0fdfc1548d4fba983f6c08ef7ed645e64eb23fa94eba9ab17acddbb4b0911    
