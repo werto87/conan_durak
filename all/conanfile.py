@@ -32,7 +32,7 @@ class Durak(ConanFile):
         self.requires("magic_enum/0.7.2")
         self.requires("pipes/1.0.0")
         self.requires("range-v3/0.11.0")
-        self.requires("fmt/7.1.3")
+        self.requires("fmt/8.0.1")
         self.requires("boost/1.76.0")
         self.requires("confu_json/0.0.5")
 
