@@ -29,11 +29,11 @@ class Durak(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("magic_enum/0.7.2")
+        self.requires("magic_enum/0.7.3")
         self.requires("pipes/1.0.0")
-        self.requires("range-v3/0.11.0")
-        self.requires("fmt/8.0.1")
-        self.requires("boost/1.76.0")
+        self.requires("range-v3/0.12.0")
+        self.requires("fmt/8.1.1")
+        self.requires("boost/1.78.0")
         self.requires("confu_json/0.0.5")
 
     def package(self):
