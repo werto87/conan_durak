@@ -7,19 +7,22 @@ sources:
     sha256: 0bbb3cc8016018da0e889f4565cb114f56c06fcadb9dcd840f313f10493cbad1
   0.0.3:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.3.tar.gz
-    sha256: 5356ee6c20bb397c41fe7f92db8ed8ea5a129a0aafab5bad073534c46bb582ee    
+    sha256: 5356ee6c20bb397c41fe7f92db8ed8ea5a129a0aafab5bad073534c46bb582ee
   0.0.4:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.4.tar.gz
-    sha256: 525cc730ed634870248e462e13eacbc8178ba6167e10a52a948d2ee37591cd8c    
+    sha256: 525cc730ed634870248e462e13eacbc8178ba6167e10a52a948d2ee37591cd8c
   0.0.5:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.5.tar.gz
-    sha256: 6a8881669d8d785b0e9efeb3c07ae3d7d6b392256c3a3e8e81392a961b4fd0fc      
+    sha256: 6a8881669d8d785b0e9efeb3c07ae3d7d6b392256c3a3e8e81392a961b4fd0fc
   0.0.6:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.6.tar.gz
-    sha256: e8b8245270f135246f71f835508612d78aca0a6a98b4c51dffbab8fbc02fb8d8    
+    sha256: e8b8245270f135246f71f835508612d78aca0a6a98b4c51dffbab8fbc02fb8d8
   0.0.7:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.7.tar.gz
     sha256: 5ab64293f1712ef7a440d7eb80354836b191a4ce7cf0d94e97c2d0778b284b38
   0.0.8:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.8.tar.gz
-    sha256: 5ab64293f1712ef7a440d7eb80354836b191a4ce7cf0d94e97c2d0778b284b38
+    sha256: 3bf9f9356b5b1f930db442cce70702de6f4830fcd030ced7ea875e3c9ef4fb69
+  0.0.9:
+    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.9.tar.gz
+    sha256: 0cdc46c548523be6837e434072351a4305856d6071977bfdc57c8b21df81adf9
