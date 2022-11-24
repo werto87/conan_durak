@@ -26,3 +26,9 @@ sources:
   0.0.9:
     url: https://github.com/werto87/durak/archive/refs/tags/v0.0.9.tar.gz
     sha256: f303f9ffeb20fb738c016bfbd8080426b2d5e4546377f0f6ac266263aa28ceba
+  0.0.10:
+    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.10.tar.gz
+    sha256: 749c062733e81c60f94706b518eb03d9d92a10090ba244ea0ec8d75e489f617b
+  0.0.11:
+    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.11.tar.gz
+    sha256: 3120ed693c626c5e022afb684af55714c564f9f3bc8735f106349e5ab31b387a
