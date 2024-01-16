@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.5)
-project(test_package CXX)
+cmake_minimum_required(VERSION 3.12)
+project(test_package LANGUAGES CXX)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
+find_package(durak REQUIRED CONFIG)
 
 add_executable(${PROJECT_NAME} test_package.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE CONAN_PKG::durak)
-target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_20)
-target_compile_definitions(${PROJECT_NAME} PUBLIC
-_LIBCPP_ENABLE_CXX20_REMOVED_TYPE_TRAITS
-)
+target_link_libraries(${PROJECT_NAME} PRIVATE durak::durak)
+if(confu_json_VERSION VERSION_LESS "1.0.0")
+    target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
+else()
+    target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
+endif()

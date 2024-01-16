@@ -1,5 +1,10 @@
-from conans import ConanFile, tools
-from conans.tools import check_min_cppstd
+from conan import ConanFile
+from conan.errors import ConanInvalidConfiguration
+from conan.tools.build import check_min_cppstd
+from conan.tools.files import copy, get
+from conan.tools.layout import basic_layout
+from conan.tools.microsoft import is_msvc
+from conan.tools.scm import Version
 import os
 
 
@@ -10,17 +15,16 @@ class Durak(ConanFile):
     topics = ("durak")
     license = "BSL-1.0"
     url = "https://github.com/conan-io/conan-center-index"
-    settings = "compiler"
+    package_type = "header-library"
+    settings = "os", "arch", "compiler", "build_type"
     no_copy_source = True
 
-    @property
-    def _source_subfolder(self):
-        return "source_subfolder"
+
+
+
 
     def source(self):
-        tools.get(**self.conan_data["sources"][self.version])
-        extracted_dir = self.name + "-" + self.version
-        os.rename(extracted_dir, self._source_subfolder)
+        get(self, **self.conan_data["sources"][self.version], strip_root=True)
 
     def configure(self):
         if self.settings.compiler.cppstd:
@@ -29,16 +33,13 @@ class Durak(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("magic_enum/0.8.1")
         self.requires("pipes/1.0.0")
         self.requires("range-v3/0.12.0")
         self.requires("fmt/9.1.0")
-        self.requires("boost/1.80.0")
-        self.requires("confu_json/0.0.9")
+        self.requires("confu_json/1.0.0")
+        self.requires("boost/1.83.0", force=True)
 
     def package(self):
-        self.copy(pattern="*", dst="include",
-                  src=os.path.join(self._source_subfolder))
+        copy(self, "*.h*", src=os.path.join(self.source_folder, "durak"),
+             dst=os.path.join(self.package_folder, "include", "durak"))
 
-    def package_id(self):
-        self.info.header_only()
