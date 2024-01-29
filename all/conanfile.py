@@ -36,8 +36,8 @@ class Durak(ConanFile):
         self.requires("pipes/1.0.0")
         self.requires("range-v3/0.12.0")
         self.requires("fmt/9.1.0")
-        self.requires("confu_json/1.0.0")
-        self.requires("boost/1.83.0", force=True)
+        self.requires("confu_json/1.0.1")
+        self.requires("boost/1.84.0", force=True)
 
     def package(self):
         copy(self, "*.h*", src=os.path.join(self.source_folder, "durak"),
