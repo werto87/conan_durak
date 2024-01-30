@@ -1,11 +1,7 @@
 from conan import ConanFile
-from conan.errors import ConanInvalidConfiguration
 from conan.tools.build import check_min_cppstd
-from conan.tools.files import copy, get
-from conan.tools.layout import basic_layout
-from conan.tools.microsoft import is_msvc
-from conan.tools.scm import Version
-import os
+from conan.tools.cmake import CMake, cmake_layout
+from conan.tools.files import get
 
 
 class Durak(ConanFile):
@@ -17,11 +13,7 @@ class Durak(ConanFile):
     url = "https://github.com/conan-io/conan-center-index"
     package_type = "header-library"
     settings = "os", "arch", "compiler", "build_type"
-    no_copy_source = True
-
-
-
-
+    generators = "CMakeDeps", "CMakeToolchain"
 
     def source(self):
         get(self, **self.conan_data["sources"][self.version], strip_root=True)
@@ -33,13 +25,16 @@ class Durak(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("pipes/1.0.0")
         self.requires("range-v3/0.12.0")
         self.requires("fmt/9.1.0")
         self.requires("confu_json/1.0.1")
-        self.requires("boost/1.84.0", force=True)
+        self.requires("boost/1.84.0")
+
+    def layout(self):
+        cmake_layout(self, src_folder=self.name+"-"+str(self.version))
 
     def package(self):
-        copy(self, "*.h*", src=os.path.join(self.source_folder, "durak"),
-             dst=os.path.join(self.package_folder, "include", "durak"))
+        cmake = CMake(self)
+        cmake.configure()
+        cmake.install()
 
