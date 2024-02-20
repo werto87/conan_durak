@@ -25,7 +25,6 @@ class Durak(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("range-v3/0.12.0")
         self.requires("fmt/9.1.0")
         self.requires("confu_json/1.0.1")
         self.requires("boost/1.84.0")
