@@ -25,9 +25,9 @@ class Durak(ConanFile):
         self.options["fmt"].header_only = True
 
     def requirements(self):
-        self.requires("fmt/9.1.0")
-        self.requires("confu_json/1.0.1")
-        self.requires("boost/1.84.0")
+        self.requires("fmt/[<10]")
+        self.requires("confu_json/[<2]")
+        self.requires("boost/[<2]")
 
     def layout(self):
         cmake_layout(self, src_folder=self.name+"-"+str(self.version))
