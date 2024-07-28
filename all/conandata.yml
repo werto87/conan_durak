@@ -1,43 +1,4 @@
 sources:
-  0.0.1:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.1.tar.gz
-    sha256: 7a98ee0d0dea867c069358eb99ffdfb7ca21d6c9df6f1369b904154746e1f80a
-  0.0.2:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.2.tar.gz
-    sha256: 0bbb3cc8016018da0e889f4565cb114f56c06fcadb9dcd840f313f10493cbad1
-  0.0.3:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.3.tar.gz
-    sha256: 5356ee6c20bb397c41fe7f92db8ed8ea5a129a0aafab5bad073534c46bb582ee
-  0.0.4:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.4.tar.gz
-    sha256: 525cc730ed634870248e462e13eacbc8178ba6167e10a52a948d2ee37591cd8c
-  0.0.5:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.5.tar.gz
-    sha256: 6a8881669d8d785b0e9efeb3c07ae3d7d6b392256c3a3e8e81392a961b4fd0fc
-  0.0.6:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.6.tar.gz
-    sha256: e8b8245270f135246f71f835508612d78aca0a6a98b4c51dffbab8fbc02fb8d8
-  0.0.7:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.7.tar.gz
-    sha256: 5ab64293f1712ef7a440d7eb80354836b191a4ce7cf0d94e97c2d0778b284b38
-  0.0.8:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.8.tar.gz
-    sha256: 3bf9f9356b5b1f930db442cce70702de6f4830fcd030ced7ea875e3c9ef4fb69
-  0.0.9:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.9.tar.gz
-    sha256: f303f9ffeb20fb738c016bfbd8080426b2d5e4546377f0f6ac266263aa28ceba
-  0.0.10:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.10.tar.gz
-    sha256: 749c062733e81c60f94706b518eb03d9d92a10090ba244ea0ec8d75e489f617b
-  0.0.11:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.11.tar.gz
-    sha256: 3120ed693c626c5e022afb684af55714c564f9f3bc8735f106349e5ab31b387a
-  0.0.12:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.12.tar.gz
-    sha256: 7620b25e3a2c7aa436339bc054d3696531b886e58f66d52d575ed17c75ff1d13
-  0.0.13:
-    url: https://github.com/werto87/durak/archive/refs/tags/v0.0.13.tar.gz
-    sha256: 90d05cc49029cab6fa6d333e19c5e8c0ba6ad179ea1fba9df7784d1ba8441e56
-  1.0.4:
-    url: https://github.com/werto87/durak/archive/refs/tags/v1.0.4.tar.gz
-    sha256: ddfb3b1cf25dac2d900cfa92e9184c6dc9eda9345fcf5283b0e51d09332f9095
+  1.1.0:
+    url: https://github.com/werto87/durak/archive/refs/tags/v1.1.0.tar.gz
+    sha256: a423ba4ef2deb5270f670b05a83f0f3b2ff84f95c282cd054393cb0fe71c8ebe
