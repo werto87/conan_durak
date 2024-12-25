@@ -21,7 +21,6 @@ class Durak(ConanFile):
     def configure(self):
         if self.settings.compiler.cppstd:
             check_min_cppstd(self, "20")
-        self.options["boost"].header_only = True
 
     def requirements(self):
         self.requires("confu_json/[<2]")
