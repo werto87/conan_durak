@@ -36,4 +36,3 @@ class Durak(ConanFile):
 
     def package_info(self):
         self.cpp_info.components[self.name].requires = ["boost::headers","confu_json::confu_json"]
-        self.cpp_info.components[self.name].libs = [self.name]
