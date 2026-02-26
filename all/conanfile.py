@@ -23,8 +23,8 @@ class Durak(ConanFile):
             check_min_cppstd(self, "20")
 
     def requirements(self):
-        self.requires("confu_json/[<2]")
-        self.requires("boost/[<2]")
+        self.requires("confu_json/1.2.0")
+        self.requires("boost/1.90")
 
     def layout(self):
         cmake_layout(self, src_folder=self.name+"-"+str(self.version))
